@@ -1,0 +1,37 @@
+.timer {
+  display: flex;
+  font-size: 16px;
+  max-width: max-content;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.field {
+  min-width: 60px;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+button,
+input {
+  padding: 4px 8px;
+  margin-top: 32px;
+  border: 1px solid;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+}
+
+button:disabled,
+input:disabled {
+  background-color: lightgray;
+}
+
+.container:has(.timer) .back-link {
+  border-radius: 8px;
+  display: inline-table;
+}
